@@ -34,11 +34,20 @@
                     <h1 class="ModalTitle">Sing up!</h1>
 
                     <div class="modal-content">
-                        
+
                         <i class="fa-solid fa-xmark close"></i>
-                        <input type="text" placeholder="Enter your Full Name" class="modalInp">
-                        <input type="email" placeholder="Enter your Email" class="modalInp">
-                        <input type="date" placeholder="Enter yor age" class="modalInp">
+                        <div style="display: grid; grid-auto-flow: column;">
+                            <span style="display: flex; margin-top: 10px;">Enter name:</span><input type="text" placeholder="Enter your Full Name"
+                                class="modalInp">
+                        </div>
+                        <div style="display: grid; grid-auto-flow: column;">
+                        <span style="display: flex; margin-top: 10px; ">Enter email:</span><input type="email" placeholder="Enter your Email" class="modalInp">
+
+                        </div>
+                        <div style="display: grid; grid-auto-flow: column;">
+                            <span style="display: flex;  margin-top: 10px;">Enter age:</span><input type="date" placeholder="Enter yor age" class="modalInp three">
+
+                        </div>
                     </div>
                 </div>
             </div>
