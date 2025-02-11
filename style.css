@@ -224,7 +224,7 @@ img {
 }
 
 .pagination button:hover {
-  background: black;
+  background: rgb(158, 158, 158);
 }
 
 .footer {
