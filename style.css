@@ -1,0 +1,448 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+.container {
+  max-width: 87%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.cardContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+  gap: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: 300px;
+}
+
+.header {
+  border-bottom: 1px solid gray;
+  padding: 15px 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+.nav p {
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav p:hover {
+  color: gray;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.header-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.hero {
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  background: url(./b40e832514912cd52c8a9f5dda7acbf0.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: gray;
+}
+
+.search-box {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.search-box button {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  color: gray;
+}
+
+.blog-section {
+  padding: 80px 0;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  gap: 5px;
+}
+
+.view-options {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 15px;
+  color: gray;
+}
+
+.view-toggles {
+  display: flex;
+  gap: 8px;
+}
+
+.view-toggles button {
+  padding: 8px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  background: none;
+  cursor: pointer;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 32px;
+  margin-bottom: 50px;
+}
+
+.blog-card {
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 80%;
+  max-width: 90%;
+  height: 230px;
+  border-radius: 5px 5px 0 0;
+}
+
+.bars {
+  display: none;
+}
+
+.blog-card h3 {
+  font-size: 17px;
+  margin: 16px 0 8px;
+}
+
+.blog-card p {
+  font-size: 15px;
+  color: gray;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 50px;
+}
+
+.pagination button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  border-radius: 50%;
+}
+
+.pagination button.active {
+  background: black;
+  color: white;
+}
+
+.pagination button:hover {
+  background: black;
+}
+
+.footer {
+  border-top: 1px solid #c4bdbd;
+  padding: 64px 0;
+  margin-top: 64px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.footer-brand p {
+  margin: 16px 0;
+  color: gray;
+  font-size: 15px;
+}
+
+.botlinks {
+  display: flex;
+  gap: 32px;
+}
+
+.footer-links h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.footer-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: gray;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: black;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid #c4bdbd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: gray;
+}
+
+.language-currency {
+  display: flex;
+  gap: 20px;
+}
+
+.language-currency img {
+  width: 26px;
+  height: 14px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.452);
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 150px;
+  margin: 15% auto;
+  text-align: center;
+  position: relative;
+  row-gap: 30px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#openModal {
+  border: 1px gray solid;
+  border-radius: 10px;
+}
+.modalInp{
+  width: 90%;
+  height: 35px;
+}
+.footer_icons{
+  gap: 30px;
+}
+.ficon{
+  width: 30px;
+  height: 33px;
+}
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero {
+    padding: 80px 0;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header .container {
+    flex-wrap: wrap;
+  }
+
+  .search-btn {
+    display: none;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(100px, auto));
+    gap: 15px;
+    font-size: 13px;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .blog-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-actions {
+    gap: 8px;
+  }
+
+  .bars {
+    display: flex;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .nav ul {
+    display: none;
+  }
+}
